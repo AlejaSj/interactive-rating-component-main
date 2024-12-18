@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *{
+        @apply font-overpass;
+    }
+    .boton{
+        @apply w-12 hover:cursor-pointer text-opacity-80 h-12 mr-6 flex items-center justify-center rounded-full bg-darkBlue hover:bg-orange pt-1 z-10;
+    }
+    button{
+        @apply hover:bg-white z-50;
+    }
+    .seleccionado{
+        @apply bg-white hover:bg-white;
+    }
+}

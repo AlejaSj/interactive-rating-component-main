@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-veryDarkBlue ">
+
+
+  <!-- Rating state start -->
+  <div class="container rounded-3xl max-w-md my-20 m-auto p-[42px] bg-gradient-to-t from-gray-950 to-darkBlue">
+    <div class="eleccion ">
+      <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.05),transparent)] -z-10"></div>
+
+
+      <img src="images/icon-star.svg" class="rounded-full bg-darkBlue p-3" alt="">
+
+      <h1 class="text-white text-[30px] mt-8">How did we do?</h1>
+      <p class="text-white opacity-75 text-[14px]">
+
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+
+      </p>
+      <div class="flex flex-row my-8">
+        <p class="boton" id="1">1</p>
+        <p class="boton" id="2">2</p>
+        <p class="boton" id="3">3</p>
+        <p class="boton" id="4">4</p>
+        <p class="boton" id="5">5</p>
+
+      </div>
+      <button class="p-2 uppercase tracking-wider font-bold w-[100%] block m-auto bg-orange rounded-3xl">Submit</button>
+
+      <!-- Rating state end -->
+    </div>
+    <div class="elegido hidden">
+      <div class="flex flex-col items-center">
+
+        <div><img src="images/illustration-thank-you.svg" alt="" class="m-6"></div>
+        <div class="rounded-2xl bg-darkBlue text-orange px-5 mb-2">
+          <p>You selected <span> </span> out of 5</p>
+
+        </div>
+        <div class="m-3">
+          <p class="text-[26px] font-bold text-white">Thank you!</p>
+
+        </div>
+        <div>
+          <p class="text-center text-white opacity-50">
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Thank you state start -->
+
+
+
+  <!-- Thank you state end -->
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
